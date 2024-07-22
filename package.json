@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\"",
+    "test": "concurrently \"wsrun --parallel test\""    
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "wsrun": "^5.2.4"
+  },
+  "engines": {
+    "yarn": "1.22.22",
+    "node": ">=18.12.0"
+  }  
+}
